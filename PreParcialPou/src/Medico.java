@@ -50,4 +50,21 @@ public class Medico extends Personas {
             System.out.println(nombre);
         }
     }
+
+    public void asignarPrioridad(int opcion){
+        switch (opcion){
+            case 1:
+                System.out.println("El paciente sufre de un dolor o molestia," +
+                        " nivel de prioridad bajo");
+                break;
+            case 2:
+                System.out.println("El paciente sufre de alguna enfermedad viral que incluya" +
+                        " fiebre entre sus síntomas, nivel de prioridad 2");
+                break;
+            case 3:
+                System.out.println("El paciente sufrió de algún ataque" +
+                        " sumamente riesgoso como un infarto, nivel de prioridad 3");
+        }
+
+    }
 }
