@@ -1,10 +1,10 @@
-public abstract class Personas {
+public abstract class Persona {
     public String nombre;
     public int  dni;
     public int edad;
     public String genero;
 
-    public Personas(String nombre, int dni, int edad, String genero) {
+    public Persona(String nombre, int dni, int edad, String genero) {
         this.nombre = nombre;
         this.dni = dni;
         this.edad = edad;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Medico extends Personas {
+public class Medico extends Persona implements ICirujano {
     public String especialidad;
     private int numeroRegistro;
     private List<Paciente> listaPacientes;
@@ -65,6 +65,21 @@ public class Medico extends Personas {
                 System.out.println("El paciente sufrió de algún ataque" +
                         " sumamente riesgoso como un infarto, nivel de prioridad 3");
         }
+
+    }
+
+    public void agregarPaciente(Paciente p){
+        listaPacientes.add(p);
+    }
+
+
+    @Override
+    public boolean validarQuiro() {
+        return false;
+    }
+
+    @Override
+    public void tomarDecision() {
 
     }
 }

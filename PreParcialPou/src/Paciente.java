@@ -1,4 +1,4 @@
-public class Paciente extends Personas{
+public class Paciente extends Persona {
 
     private int numeroHistorial;
     private String eps;
@@ -8,7 +8,7 @@ public class Paciente extends Personas{
         super(nombre, dni, edad, genero);
     }
 
-    public Paciente(String nombre, int dni, int edad, String genero, int numeroHistorial, String eps, double saldoDisponible, String sintomas) {
+    public Paciente(String nombre, int dni, int edad, String genero, int numeroHistorial) {
         super(nombre, dni, edad, genero);
         this.numeroHistorial = numeroHistorial;
         this.eps = eps;
@@ -16,11 +16,12 @@ public class Paciente extends Personas{
         this.sintomas = sintomas;
     }
 
-    public Paciente(String nombre, int dni, int edad, String genero, int numeroHistorial, String eps, double saldoDisponible) {
+    public Paciente(String nombre, int dni, int edad, String genero, int numeroHistorial, String eps, double saldoDisponible, String sintomas) {
         super(nombre, dni, edad, genero);
         this.numeroHistorial = numeroHistorial;
         this.eps = eps;
         this.saldoDisponible = saldoDisponible;
+        this.sintomas = sintomas;
     }
 
     public int getNumeroHistorial() {
